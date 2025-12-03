@@ -2,8 +2,8 @@
 
 This lab introduces fundamental tools in digital image processing using Python.
 The experiments are based on visible-light and thermal images and cover dynamic
-range, histograms, enhancement, edge detection, morphology, region properties
-and Hough-based line detection. :contentReference[oaicite:0]{index=0}
+range, histograms, enhancement, edge detection, morphology, region properties,
+and Hough-based line detection.
 
 ## Goals
 
@@ -17,71 +17,56 @@ and Hough-based line detection. :contentReference[oaicite:0]{index=0}
 
 ## Repository Contents
 
-- `notebooks/lab01_image_processing.ipynb`  
-  Main Python notebook implementing all tasks.
+- **`lab1.ipynb`**  
+  Main Python notebook implementing all Lab 1 tasks.
 
-- `report/lab01_report.pdf`  
-  Full lab report with figures, explanations and conclusions.
+- **`lab1.pdf`**  
+  Full lab report with figures, explanations, and conclusions.
 
-- `images/` (optional)  
-  Selected result figures (histograms, edge maps, segmented images, Hough lines).
+- `lab01-basic-image-processing/notebooks/`  
+  (currently optional — placeholder for additional notebooks if needed)
 
 ## Main Experiments
 
 ### 1. Image Acquisition
-
-- Capture three **visible** images and three **thermal** images of the same scene.
-- Compare the visual and thermal versions and how intensity encodes temperature. :contentReference[oaicite:1]{index=1}
+- Capture three visible-light images and three thermal images of the same scene.
+- Compare visual vs thermal representations and how intensity relates to temperature.
 
 ### 2. Dynamic Range & Histograms
-
-- Inspect min, max and mean pixel values of a grayscale image (e.g. the toucan).
-- Plot intensity profiles along selected rows and explain how they relate to the content.
-- Add Gaussian noise and analyze how the histogram spreads and how variance changes.
-- Compare histograms of a visible image and its thermal counterpart (12-bit vs 8-bit). :contentReference[oaicite:2]{index=2}
+- Inspect min, max, and mean intensity of grayscale images.
+- Plot intensity profiles along rows/columns and explain how they relate to content.
+- Add Gaussian noise and observe histogram spreading and variance changes.
+- Compare histograms of visible-light and thermal images (8-bit vs 12-bit sensors).
 
 ### 3. Histogram-Based Enhancement
-
-- Apply **contrast stretching** and **brightness shifting** and view their effect on the histogram.
-- Perform **histogram equalization** and observe how the histogram becomes more uniform.
-- Use **gamma correction** with different γ values to improve dark / low-contrast images
-  (e.g. snow and bubble images) and explain which γ gives the best visual result. :contentReference[oaicite:3]{index=3}
+- Apply contrast stretching and brightness adjustments.
+- Perform histogram equalization and examine histogram uniformity.
+- Use gamma correction to improve low-contrast images and compare different γ values.
 
 ### 4. Edge Detection
-
-- Apply **Sobel**, **Laplacian of Gaussian (LoG)** and **Canny** edge detectors to the
-  church image with different thresholds / σ values.
-- Select the “best” parameter set by balancing noise suppression and edge preservation.
-- Compare performance on visible vs thermal images and explain why thermal edges are
-  weaker and coarser. :contentReference[oaicite:4]{index=4}
+- Apply Sobel, LoG, and Canny edge detectors with varying parameters.
+- Discuss noise sensitivity, edge sharpness, and parameter selection.
+- Compare edge maps in visible vs thermal images and explain differences.
 
 ### 5. Thresholding & Morphology
+- Perform global thresholding on tools and rice images.
+- Use erosion/dilation to remove noise and recover main objects.
+- Perform background estimation + subtraction to improve segmentation quality.
 
-- Perform global thresholding on object images (tools, rice grains) and examine the
-  resulting binary masks.
-- Apply **erosion** and **dilation** to remove small details and then recover main objects,
-  and discuss what details are lost. :contentReference[oaicite:5]{index=5}
-- Use background estimation + subtraction to get a much better separation of rice
-  grains from the background, both visually and in the histogram.
-
-### 6. Region Properties & Simple Classification
-
-- Label connected components (keys, nails) and compute region properties
-  such as area, convex area, perimeter, eccentricity, solidity, axis lengths.
-- Use scatter plots (e.g. *major axis* vs *convex area*, *axis ratio* vs *eccentricity*)
-  to cluster objects into: keys, thin-head nails, wide-head nails. :contentReference[oaicite:6]{index=6}
+### 6. Region Properties & Classification
+- Label connected components and compute region measurements:
+  area, convex area, eccentricity, solidity, axis lengths, perimeter.
+- Classify objects (keys, thin-head nails, thick-head nails) using feature plots.
 
 ### 7. Line Detection with the Hough Transform
-
-- Detect edges in an image of a bridge / poles and compute the Hough transform.
-- Interpret peaks in the Hough parameter space (ρ, θ) as straight lines in the image.
-- Experiment with different thresholds and discuss over-detection vs under-detection of
-  lines, and possible improvements (e.g. processing image segments). :contentReference[oaicite:7]{index=7}
+- Detect edges in structural images (bridge/poles).
+- Compute the Hough transform and interpret peaks (ρ, θ).
+- Experiment with thresholds and discuss over/under-detection.
 
 ## How to Run
 
-1. Open `notebooks/lab01_image_processing.ipynb` in Jupyter / VS Code.
-2. Make sure the required libraries are installed, e.g.:
+1. Open **`lab1.ipynb`** in Jupyter Notebook or VS Code.
+2. Install required dependencies:
 
    ```bash
    pip install numpy matplotlib opencv-python scikit-image
