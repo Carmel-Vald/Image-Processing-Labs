@@ -96,3 +96,10 @@ Examples:
 - PSNR reflects pixel error but SSIM better matches human perception.
 
 ---
+
+
+## 📘 Jupyter Notebook
+
+Click below to open the full implementation:
+
+👉 **[lab3.ipynb](lab3.ipynb)**  
