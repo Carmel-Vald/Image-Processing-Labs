@@ -58,3 +58,9 @@ and handling noisy images with denoising filters.
    ```
 
 ---
+
+## Download & View Materials
+
+**Jupyter Notebook**  
+Full implementation of all Lab 4 experiments:  
+[lab4.ipynb](lab4.ipynb)
