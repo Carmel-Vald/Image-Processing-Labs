@@ -70,3 +70,14 @@ and Hough-based line detection.
 
    ```bash
    pip install numpy matplotlib opencv-python scikit-image
+
+
+   ## Download & View Materials
+
+**Jupyter Notebook**  
+The full implementation of all Lab 1 experiments is available here:  
+[lab1.ipynb](lab1.ipynb)
+
+**Full Lab Report (PDF)**  
+Includes figures, explanations, and conclusions:  
+[lab1.pdf](lab1.pdf)
