@@ -20,11 +20,8 @@ and Hough-based line detection.
 - **`lab1.ipynb`**  
   Main Python notebook implementing all Lab 1 tasks.
 
-- **`lab1.pdf`**  
-  Full lab report with figures, explanations, and conclusions.
-
 - `lab01-basic-image-processing/notebooks/`  
-  (currently optional — placeholder for additional notebooks if needed)
+  Placeholder folder for optional additional notebooks.
 
 ## Main Experiments
 
@@ -77,7 +74,3 @@ and Hough-based line detection.
 **Jupyter Notebook**  
 The full implementation of all Lab 1 experiments is available here:  
 [lab1.ipynb](lab1.ipynb)
-
-**Full Lab Report (PDF)**  
-Includes figures, explanations, and conclusions:  
-[lab1.pdf](lab1.pdf)
