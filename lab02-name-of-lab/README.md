@@ -64,3 +64,9 @@ and white-balance algorithms.
    ```bash
    pip install numpy matplotlib opencv-python scikit-image rawpy
    ```
+
+   ## Download & View Materials
+
+**Jupyter Notebook**  
+The full implementation of all Lab 2 experiments is available here:  
+[lab2.ipynb](lab2.ipynb)
